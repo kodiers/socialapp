@@ -216,15 +216,15 @@
                                     <constraint firstAttribute="trailing" secondItem="hyr-b5-YD3" secondAttribute="trailing" constant="8" id="r1A-MS-CSk"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="352" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vnu-Hh-ND0">
-                                <rect key="frame" x="0.0" y="162" width="375" height="505"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="352" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vnu-Hh-ND0">
+                                <rect key="frame" x="0.0" y="154" width="375" height="513"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="352" id="gjO-83-2nr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="352" id="gjO-83-2nr" customClass="PostCell" customModule="socialapp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="352"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gjO-83-2nr" id="ph8-Jr-xTW">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="351.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="352"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wJ-43-Qag" customClass="FancyView" customModule="socialapp" customModuleProvider="target">
@@ -249,7 +249,7 @@
                                                                             <color key="textColor" red="0.86666666670000003" green="0.17254901959999999" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="displayP3"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="LFo-1p-X4a" customClass="CircleView" customModule="socialapp" customModuleProvider="target">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="LFo-1p-X4a">
                                                                             <rect key="frame" x="267" y="0.0" width="60" height="60"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="60" id="GmB-JY-p7F"/>
@@ -259,11 +259,14 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="esy-J6-V53">
-                                                                    <rect key="frame" x="0.0" y="68" width="327" height="123.5"/>
+                                                                    <rect key="frame" x="0.0" y="68" width="327" height="163.5"/>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="48z-nW-59J">
-                                                                    <rect key="frame" x="0.0" y="199.5" width="327" height="90"/>
+                                                                    <rect key="frame" x="0.0" y="239.5" width="327" height="50"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="kwK-KA-yJs"/>
+                                                                    </constraints>
                                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -299,6 +302,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="3wJ-43-Qag" firstAttribute="leading" secondItem="ph8-Jr-xTW" secondAttribute="leading" constant="16" id="EsW-Ws-Eva"/>
                                                 <constraint firstAttribute="trailing" secondItem="3wJ-43-Qag" secondAttribute="trailing" constant="16" id="Hw4-Jg-zWL"/>
@@ -306,6 +310,13 @@
                                                 <constraint firstAttribute="bottom" secondItem="3wJ-43-Qag" secondAttribute="bottom" constant="8" id="zaP-Xv-cbD"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="48z-nW-59J" id="oGt-4T-i5l"/>
+                                            <outlet property="likesLbl" destination="I9A-h7-4Qp" id="GDX-Ec-ekI"/>
+                                            <outlet property="postImg" destination="esy-J6-V53" id="V0S-y2-77b"/>
+                                            <outlet property="profileImg" destination="Onu-CB-sNf" id="U1Q-Km-I6g"/>
+                                            <outlet property="usernameLbl" destination="g2o-cy-BKb" id="Pm5-al-9UI"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -319,12 +330,13 @@
                             <constraint firstAttribute="trailing" secondItem="Vnu-Hh-ND0" secondAttribute="trailing" id="ObM-bi-76s"/>
                             <constraint firstItem="dSM-HF-VqB" firstAttribute="leading" secondItem="xUq-36-d2D" secondAttribute="leading" id="YBl-rl-pOy"/>
                             <constraint firstAttribute="trailing" secondItem="dSM-HF-VqB" secondAttribute="trailing" id="ayP-hI-SxV"/>
-                            <constraint firstItem="Vnu-Hh-ND0" firstAttribute="top" secondItem="MBX-SC-Ypl" secondAttribute="bottom" constant="16" id="eT1-Au-res"/>
+                            <constraint firstItem="Vnu-Hh-ND0" firstAttribute="top" secondItem="MBX-SC-Ypl" secondAttribute="bottom" constant="8" id="eT1-Au-res"/>
                             <constraint firstItem="WE5-Ga-s28" firstAttribute="top" secondItem="Vnu-Hh-ND0" secondAttribute="bottom" id="ggd-lQ-UGw"/>
                             <constraint firstItem="Vnu-Hh-ND0" firstAttribute="leading" secondItem="xUq-36-d2D" secondAttribute="leading" id="l3B-mI-QB0"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="Vnu-Hh-ND0" id="SXw-in-fjX"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="ifd-yW-i53"/>
                     </connections>
                 </viewController>

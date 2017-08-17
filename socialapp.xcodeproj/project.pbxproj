@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC30BFCB1F450B92000EAD97 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30BFCA1F450B92000EAD97 /* PostCell.swift */; };
 		AC48D3DF1F3BD536001BD5EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48D3DE1F3BD536001BD5EB /* AppDelegate.swift */; };
 		AC48D3E11F3BD536001BD5EB /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48D3E01F3BD536001BD5EB /* SignInVC.swift */; };
 		AC48D3E41F3BD536001BD5EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC48D3E21F3BD536001BD5EB /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		6CE3C4A2508B5FDB60ADD44B /* Pods-socialapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialapp/Pods-socialapp.release.xcconfig"; sourceTree = "<group>"; };
+		AC30BFCA1F450B92000EAD97 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		AC48D3DB1F3BD536001BD5EB /* socialapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC48D3DE1F3BD536001BD5EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC48D3E01F3BD536001BD5EB /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				AC54FD901F3D28470010D835 /* FancyField.swift */,
 				AC54FD921F3D29E30010D835 /* FancyBtn.swift */,
 				ACA5CB1F1F43BD7700221D02 /* CircleView.swift */,
+				AC30BFCA1F450B92000EAD97 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				AC54FD8A1F3D23C90010D835 /* FancyView.swift in Sources */,
 				AC54FD8D1F3D246B0010D835 /* Constants.swift in Sources */,
 				AC54FD931F3D29E30010D835 /* FancyBtn.swift in Sources */,
+				AC30BFCB1F450B92000EAD97 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
