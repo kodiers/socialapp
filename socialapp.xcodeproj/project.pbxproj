@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC30BFCB1F450B92000EAD97 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30BFCA1F450B92000EAD97 /* PostCell.swift */; };
+		AC42B9201F4654AC00DB975B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC42B91F1F4654AC00DB975B /* DataService.swift */; };
 		AC48D3DF1F3BD536001BD5EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48D3DE1F3BD536001BD5EB /* AppDelegate.swift */; };
 		AC48D3E11F3BD536001BD5EB /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC48D3E01F3BD536001BD5EB /* SignInVC.swift */; };
 		AC48D3E41F3BD536001BD5EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC48D3E21F3BD536001BD5EB /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		6CE3C4A2508B5FDB60ADD44B /* Pods-socialapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialapp/Pods-socialapp.release.xcconfig"; sourceTree = "<group>"; };
 		AC30BFCA1F450B92000EAD97 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		AC42B91F1F4654AC00DB975B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		AC48D3DB1F3BD536001BD5EB /* socialapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC48D3DE1F3BD536001BD5EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC48D3E01F3BD536001BD5EB /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AC42B91E1F46548C00DB975B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AC42B91F1F4654AC00DB975B /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		AC48D3D21F3BD536001BD5EB = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		AC48D3DD1F3BD536001BD5EB /* socialapp */ = {
 			isa = PBXGroup;
 			children = (
+				AC42B91E1F46548C00DB975B /* Services */,
 				AC54FD8B1F3D24530010D835 /* Util */,
 				AC7B34A91F3BDC0100AA8F1D /* Model */,
 				AC7B34AA1F3BDC0800AA8F1D /* View */,
@@ -276,6 +287,7 @@
 				AC48D3E11F3BD536001BD5EB /* SignInVC.swift in Sources */,
 				AC54FD8F1F3D265C0010D835 /* RoundBtn.swift in Sources */,
 				AC48D3DF1F3BD536001BD5EB /* AppDelegate.swift in Sources */,
+				AC42B9201F4654AC00DB975B /* DataService.swift in Sources */,
 				ACAAAD0F1F4269D1008C3789 /* FeedVC.swift in Sources */,
 				AC54FD8A1F3D23C90010D835 /* FancyView.swift in Sources */,
 				AC54FD8D1F3D246B0010D835 /* Constants.swift in Sources */,
